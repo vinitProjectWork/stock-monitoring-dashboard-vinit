@@ -1,0 +1,73 @@
+@use '../_variables' as *;
+
+
+.header {
+    overflow: hidden;
+    background-color: $bg-light;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 1010101;
+
+    a {
+        float: left;
+        color: $text-dark;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+
+        &:hover {
+            color: $text-primary;
+        }
+
+        .active {
+            color: $text-primary;
+        }
+    }
+
+    .header-right {
+        float: right;
+
+        .search-input {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: auto;
+            color: $text-muted;
+            border-bottom: 1px solid $border-muted;
+            padding: 15px 10px;
+
+            .clear {
+                cursor: pointer;
+            }
+
+            input {
+                background-color: transparent;
+                color: $text-muted;
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+    .header-right {
+        float: none;
+    }
+}

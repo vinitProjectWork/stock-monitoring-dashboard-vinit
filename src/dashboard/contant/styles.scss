@@ -1,0 +1,47 @@
+@use '../../_variables' as *;
+
+.contant {
+    width: 70%;
+    overflow-y: auto;
+
+    .chart-container {}
+
+    .infomation {
+        width: 90%;
+        padding: 10px;
+
+        .details-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 8px;
+            gap: 10px;
+
+            .details-contant {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 40%;
+                font-weight: bold;
+                text-transform: capitalize;
+                padding: 10px;
+                border: 1px solid $border-secondary;
+
+                .value {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+}
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    color: $text-muted;
+}

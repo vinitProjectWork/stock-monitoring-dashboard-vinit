@@ -1,0 +1,30 @@
+@use '../_variables' as *;
+
+.container {
+    background-color: $bg-light;
+    border-left: 1px solid $border-muted;
+    border-right: 1px solid $border-muted;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px 15px;
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px $bg-secondary;
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: $bg-light;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $bg-secondary;
+        border: 2px solid $border-muted;
+    }
+}
