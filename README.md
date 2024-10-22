@@ -37,3 +37,17 @@ Below Chart, we are displaying data of stock realted to trade like below details
 - Stock Day Low
 - 50day avg
 - 200day avg
+
+## Dashboard Screenshot
+
+![Stock Monitoring Dashboard](./image.png?raw=true "Stock Monitoring Dashboard")
+
+as shown in above image there is 3 main component.
+
+- Sidebar
+  - searchbar - to search stock to add in watchlist
+  - list of stock to added watchlist
+- Chart
+  - to display selected stock's candalistic chart by 5Min with day high, low, open, close.
+- Stock Details
+  - to show stock details
